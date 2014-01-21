@@ -1,0 +1,187 @@
+
+body {
+    color: #333333;
+    font-family: Arial,Tahoma,Verdana;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none outside none;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+.admin {
+}
+.header_admin {
+    background: none repeat scroll 0 0 #003399;
+    border-bottom: 5px solid #FFB319;
+    height: 40px;
+}
+.header_admin h2 {
+    color: #FFFFFF;
+    padding: 10px;
+}
+.form_admin {
+    background: none repeat scroll 0 0 #FFB319;
+    border-bottom: 2px solid #CE8A00;
+    border-radius: 5px;
+    margin: 200px auto auto;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+}
+.search {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: -moz-use-text-color -moz-use-text-color rgba(223, 156, 14, 0.86);
+    border-image: none;
+    border-style: none none solid;
+    border-width: 0 0 2px;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    width: 300px;
+}
+.tombol {
+    background: none repeat scroll 0 0 #D3D3D3;
+    border: 5px solid;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+}
+.form_admin h2 {
+    color: #003399;
+    padding: 10px;
+}
+.tengah {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+.panel_admin {
+    padding: 20px;
+}
+.panel_admin h2 {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-bottom: 2px solid #FFB319;
+    color: #003399;
+    padding: 20px;
+}
+.bar_menu {
+    float: left;
+    margin-top: -7px;
+}
+.panel_admin h1{
+    color:#003399;
+    margin-left: 10px;
+}
+.menu_admin {
+    margin-left: -40px;
+}
+.menu_admin li {
+    background: none repeat scroll 0 0 #FFB319;
+    color: #FFFFFF;
+    display: inline;
+    font-weight: bold;
+    height: 20px;
+    letter-spacing: 1px;
+    padding: 5px;
+    width: 100px;
+}
+.brg {
+    background: none repeat scroll 0 0 #EEEEEE;
+    padding: 10px;
+}
+.brg h3 {
+}
+.barang {
+    float: left;
+    padding: 5px;
+    text-align: center;
+    width: 850px;
+}
+.item {
+    display: inline-block;
+    height: 240px;
+    margin: 20px;
+    width: 170px;
+}
+.item img {
+    height: 140px;
+    width: 160px;
+}
+.det_item {
+}
+.det_item h3 {
+    color: #003399;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.stok {
+}
+.harga {
+    color: #FFB319;
+    font-weight: bold;
+}
+.ipt {
+}
+.clear {
+    clear: both;
+}
+form#form label {
+    clear: left;
+    display: block;
+    float: left;
+    margin-bottom: 5px;
+    padding-right: 10px;
+    padding-top: 5px;
+    text-align: right;
+    width: 115px;
+}
+form#form input {
+    border: 1px solid #FFB319;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+.pencet {
+    background: none repeat scroll 0 0 #FFB319;
+    border-radius: 2px;
+    color: #003399;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.table {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #D6D6D6;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.table tr td {
+    border-bottom: 1px solid #D6D6D6;
+    padding: 0 3px;
+}
+.tomb {
+    background: none scroll 0px 0px #039;;
+    border: medium none;
+    border-radius: 2px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    padding: 5px;
+}
+.imgedit {
+    float: right;
+    margin-top: -155px;
+}

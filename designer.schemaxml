@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemadesigner version="6.5">
+<source>
+<database charset="latin1" collation="latin1_swedish_ci">pwl</database>
+</source>
+<canvas zoom="100">
+<tables>
+<table name="barang" view="standard">
+<left>787</left>
+<top>12</top>
+<width>249</width>
+<height>182</height>
+<sql_create_table>CREATE TABLE `barang` (
+  `id_barang` int(20) NOT NULL AUTO_INCREMENT,
+  `nama_barang` varchar(50) NOT NULL,
+  `deskripsi_barang` text NOT NULL,
+  `id_kategori` int(20) NOT NULL,
+  `stok` int(20) NOT NULL,
+  `harga` int(20) NOT NULL,
+  `gambar_besar` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_barang`),
+  UNIQUE KEY `nama_barang` (`nama_barang`),
+  KEY `id_kategori` (`id_kategori`),
+  CONSTRAINT `barang_ibfk_1` FOREIGN KEY (`id_kategori`) REFERENCES `kategori` (`id_kategori`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+<table name="kategori" view="standard">
+<left>547</left>
+<top>221</top>
+<width>215</width>
+<height>95</height>
+<sql_create_table>CREATE TABLE `kategori` (
+  `id_kategori` int(11) NOT NULL AUTO_INCREMENT,
+  `kategori` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_kategori`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+<table name="pelanggan" view="standard">
+<left>25</left>
+<top>30</top>
+<width>246</width>
+<height>165</height>
+<sql_create_table>CREATE TABLE `pelanggan` (
+  `id_pelanggan` int(20) NOT NULL AUTO_INCREMENT,
+  `nama_pelanggan` varchar(25) NOT NULL,
+  `alamat` varchar(50) NOT NULL,
+  `ttl` date NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  PRIMARY KEY (`id_pelanggan`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+<table name="beli" view="standard">
+<left>525</left>
+<top>20</top>
+<width>230</width>
+<height>181</height>
+<sql_create_table>CREATE TABLE `beli` (
+  `id_barang` int(20) NOT NULL,
+  `jumlah` int(20) NOT NULL,
+  `id_order` int(20) DEFAULT NULL,
+  KEY `id_barang` (`id_barang`),
+  KEY `id_order` (`id_order`),
+  CONSTRAINT `beli_ibfk_1` FOREIGN KEY (`id_barang`) REFERENCES `barang` (`id_barang`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `beli_ibfk_2` FOREIGN KEY (`id_order`) REFERENCES `order_new` (`id_order`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+<table name="admin" view="standard">
+<left>792</left>
+<top>210</top>
+<width>225</width>
+<height>146</height>
+<sql_create_table>CREATE TABLE `admin` (
+  `id_admin` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `nama_admin` varchar(255) NOT NULL,
+  `last_login` datetime DEFAULT NULL,
+  PRIMARY KEY (`id_admin`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+<table name="order_new" view="standard">
+<left>303</left>
+<top>25</top>
+<width>202</width>
+<height>129</height>
+<sql_create_table>CREATE TABLE `order_new` (
+  `id_order` int(20) NOT NULL AUTO_INCREMENT,
+  `date_order` datetime DEFAULT NULL,
+  `id_pelanggan` int(20) DEFAULT NULL,
+  PRIMARY KEY (`id_order`),
+  KEY `id_pelanggan` (`id_pelanggan`),
+  CONSTRAINT `order_new_ibfk_1` FOREIGN KEY (`id_pelanggan`) REFERENCES `pelanggan` (`id_pelanggan`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=76 DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+</tables>
+</canvas>
+</schemadesigner>

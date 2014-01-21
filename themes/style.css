@@ -1,0 +1,366 @@
+
+body {
+    color: #333333;
+    font-family: Arial,Tahoma,Verdana;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none outside none;
+}
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+.head {
+    background: none repeat scroll 0 0 #EEEEEE;
+    height: 30px;
+}
+.info {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+.info_link {
+    float: right;
+    font-size: 12px;
+    margin: 5px 0 0;
+}
+.info_link li {
+    display: inline-block;
+    font-size: 11px;
+}
+.link {
+    padding: 2px;
+}
+.pisah {
+    color: #D6D6D6;
+    font-size: 14px;
+    font-weight: bold;
+}
+.kepala {
+    border-bottom: 5px solid #003399;
+    height: 35px;
+}
+.logo {
+    float: left;
+    margin-top: -14px;
+}
+.logo h1 {
+    background: none repeat scroll 0 0 #FFB319;
+    border: 5px solid;
+    border-radius: 8px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    padding: 15px;
+}
+.search {
+    background: none repeat scroll 0 0 #EBEBEB;
+    border: 1px solid #DFDFDF;
+    margin-top: 4px;
+    padding: 5px;
+    width: 400px;
+}
+.tombol {
+    background: none repeat scroll 0 0 #FFB319;
+    border: medium none;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 6px;
+}
+.cari {
+    float: left;
+    margin-left: 20px;
+}
+.diskon {
+    background: none repeat scroll 0 0 #003399;
+    float: left;
+    margin-left: 20px;
+    padding: 7px;
+    text-align: center;
+    width: 290px;
+}
+.diskon h2 {
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+.container {
+    margin-top: 15px;
+}
+.promo {
+    border: 2px solid #E7E7E7;
+    float: left;
+    margin-left: 9px;
+    padding: 10px;
+}
+.promo_img {
+    width: 720px;
+}
+.clear {
+    clear: both;
+}
+.side_kanan {
+    float: left;
+    margin-left: 15px;
+    text-align: left;
+    width: 250px;
+}
+.side_kanan h3 {
+    background: none repeat scroll 0 0 #003399;
+    border-radius: 5px 5px 0 0;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    padding: 8px;
+}
+.cat {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #F7F7F7;
+    border-color: -moz-use-text-color #E7E7E7 #E7E7E7;
+    border-image: none;
+    border-radius: 0 0 5px 5px;
+    border-style: none solid solid;
+    border-width: medium 2px 2px;
+    margin-top: 0;
+}
+.cat li {
+    border-bottom: 1px dotted #E7E7E7;
+    border-radius: 0 0 5px 5px;
+    color: #646464;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    letter-spacing: 1px;
+    margin-left: -27px;
+    padding: 5px 4px 4px;
+    width: 205px;
+}
+.product {
+    margin-top: 10px;
+    padding: 10px;
+}
+.product h2 {
+    background: none repeat scroll 0 0 #FFB319;
+    border-radius: 100%;
+    color: #FFFFFF;
+    float: left;
+    height: 80px;
+    letter-spacing: 1px;
+    line-height: 4.5;
+    text-align: center;
+    width: 80px;
+}
+.barang {
+    float: left;
+    padding: 5px;
+    text-align: center;
+    width: 900px;
+}
+.item {
+    border-bottom: 2px dotted #003399;
+    display: inline-block;
+    height: 240px;
+    margin: 20px;
+    width: 170px;
+}
+.item img {
+    width: 128px;
+}
+.det_item {
+}
+.det_item h3 {
+    color: #003399;
+    height: 30px;
+}
+.stok {
+}
+.harga {
+    color: #FFB319;
+    font-weight: bold;
+}
+.footer {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-top: 5px solid #003399;
+    height: 450px;
+    margin-top: 30px;
+}
+.isi_footer {
+}
+.isi_footer h3 {
+}
+.isi_footer p {
+}
+.des {
+    border-bottom: 2px solid #DDDDDD;
+    padding: 20px 0;
+}
+.des h3 {
+    padding-top: 0;
+}
+.footer_bawah {
+    float: left;
+    margin: 20px;
+    width: 150px;
+}
+.footer_bawah h3 {
+    float: left;
+    width: 250px;
+}
+.footer_img {
+    margin-bottom: -15px;
+    padding-top: 20px;
+}
+.footer_bawah p {
+    float: left;
+    width: 425px;
+}
+.list_bawah {
+    float: left;
+}
+.list_bawah li {
+    border-bottom: 1px dotted #CCB7B7;
+    margin-left: -31px;
+    padding: 5px 5px 5px 10px;
+    width: 120px;
+}
+.kaki {
+    background: none repeat scroll 0 0 #333333;
+    height: 15px;
+    color: rgb(156, 156, 156);
+    text-align: right;
+    padding: 10px;
+    padding-right: 100px;
+}
+.kaki_bawah {
+    color: #979797;
+    letter-spacing: 1px;
+    padding-top: 8px;
+    text-align: right;
+}
+.login {
+    margin-top: 20px;
+}
+.login h3 {
+    font-size: 15px;
+    float: left;
+}
+.data {
+    background: none repeat scroll 0 0 #EBEBEB;
+    border: 1px solid #DFDFDF;
+    float: right;
+    margin-top: 4px;
+    padding: 5px;
+    width: 350px;
+}
+.masuk {
+    height: 150px;
+    width: 600px;
+}
+.titik {
+}
+.masuk_list {
+    margin-top: 23px;
+}
+.masuk_list li {
+    display: inline-block;
+}
+.masuk_list li h4 {
+    float: left;
+    margin-top: 10px;
+    width: 80px;
+}
+.daftar {
+    width: 600px;
+}
+.single {
+    margin-top: 20px;
+    text-align: center;
+}
+.single_kiri {
+}
+.single_kiri h1 {
+    background: none repeat scroll 0 0 #003399;
+    color: #FFFFFF;
+    float: left;
+    font-size: 18px;
+    padding: 10px;
+}
+.produk {
+    float: left;
+    height: 440px;
+    width: 740px;
+}
+.gambar {
+    float: left;
+    margin-left: 20px;
+    padding-top: 20px;
+    width: 360px;
+}
+.detail {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+.gambar img {
+    border: 1px solid #E7E7E7;
+}
+.detail_barang {
+    margin-left: -30px;
+    text-align: left;
+    width: 200px;
+}
+.detail_barang li {
+    border-bottom: 1px dotted;
+    height: 16px;
+    padding: 8px;
+    width: 200px;
+}
+.teng {
+    margin: 0 auto;
+}
+.tabel {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border: 1px solid #D6D6D6;
+    margin-top: 10px;
+    float: left;
+}
+.tabel tr th {
+    background: none repeat scroll 0 0 #FFB319;
+    border: 1px solid #EEEEEE;
+    padding: 5px;
+}
+.tabel tr td {
+    border-bottom: 1px solid #D6D6D6;
+    padding: 5px;
+}
+.tabel tr {
+}
+.but {
+}
+
+
+.daft {
+    width: 500px;
+    float: right;
+}
+
+.daftkiri {
+    float: left;
+    width: 520px;
+}
+
+.jum {
+    width: 30px;
+    border: 1px solid #D5D5D5;
+    background: #F5F5F5;
+}
+.deskripsi {
+    margin-top: -15px;
+}
